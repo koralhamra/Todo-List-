@@ -24,8 +24,9 @@ function App() {
       />
       <TodoList setTodos={setTodos} todos={todos} />
       <div className="clearListContainer">
+        <p>You have {todos.length} pending tasks</p>
         <button className="clearBtn" onClick={clearList}>
-          Clear List
+          Clear All
         </button>
       </div>
     </div>
